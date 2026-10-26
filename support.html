@@ -51,16 +51,26 @@
   <h2>Frequently Asked Questions</h2>
 
   <div class="faq-item">
-    <h3>How do I import a book or video?</h3>
+    <h3>How do I import a book?</h3>
     <p>
-      Tap the import button in the library tab. You can import text files (TXT, EPUB), subtitle files (SRT, VTT), or paste text directly. Lexima will build your personal corpus from the content.
+      Go to the Library tab and tap import. You can import text files (TXT, EPUB) or paste text directly. Lexima will build your personal corpus from the content.
     </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How do I import a video with subtitles?</h3>
+    <p>Lexima supports three ways to get subtitles for your videos:</p>
+    <ul>
+      <li><strong>Video with embedded subtitles</strong> — Import the video file directly. Lexima detects and extracts subtitles already muxed into the file.</li>
+      <li><strong>Video + separate subtitle file</strong> — Import your video first, then import a subtitle file (SRT, VTT, ASS) to pair with it.</li>
+      <li><strong>Video only (on-device transcription)</strong> — Import just the video. Lexima uses on-device speech-to-text to generate a transcript automatically. No internet required, no data leaves your device.</li>
+    </ul>
   </div>
 
   <div class="faq-item">
     <h3>How does the flashcard system work?</h3>
     <p>
-      As you read or watch content, Lexima tracks words you look up or mark. These are scheduled for review using a spaced repetition algorithm. Flashcards automatically pull example sentences from your own imported materials, so you review words in context you've already seen.
+      As you read or watch content, Lexima tracks words you look up or mark. These are scheduled for review using a spaced repetition algorithm. Flashcards automatically pull example sentences from your own imported materials, so you review words in context you've already encountered.
     </p>
   </div>
 
@@ -79,30 +89,30 @@
   </div>
 
   <div class="faq-item">
-    <h3>Where is my data stored?</h3>
+    <h3>Does Lexima sync across devices?</h3>
     <p>
-      All your books, videos, vocabulary, and progress are stored locally on your device. Lexima does not have a cloud backend. If you delete the app, your local data is removed — we recommend exporting important materials regularly.
-    </p>
-  </div>
-
-  <div class="faq-item">
-    <h3>Can I sync across devices?</h3>
-    <p>
-      Currently Lexima is local-only. You can manually export your corpus and import it on another device. Cloud sync is planned for a future release.
-    </p>
-  </div>
-
-  <div class="faq-item">
-    <h3>The app crashed / I found a bug. What do I do?</h3>
-    <p>
-      Please email us (address below) with: (1) your device model and macOS/iOS version, (2) what you were doing when it happened, (3) if possible, steps to reproduce. Screenshots or screen recordings are very helpful.
+      Yes. Lexima uses iCloud to sync your <strong>study progress</strong> (flashcard reviews, word mastery levels, learning streaks) across your devices signed into the same Apple ID. Your imported books, videos, and corpus data are stored locally and not uploaded to iCloud — only your progress travels with you.
     </p>
   </div>
 
   <div class="faq-item">
     <h3>How do I reset my progress?</h3>
     <p>
-      Go to Settings → Data Management → Reset All Data. This permanently deletes your local corpus and study progress. There is no undo — make sure to export anything important first.
+      Go to Settings → Data Management → Reset Study Progress. This clears your review history and word mastery data (synced across iCloud). Your imported books and videos remain untouched. To delete everything including your library, choose "Delete All Data" instead.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>On-device transcription isn't working well. What can I do?</h3>
+    <p>
+      On-device transcription uses Apple's Speech framework and depends on audio clarity and the language model installed on your device. For best results: ensure the video audio is clear, download the offline dictation language pack in iOS/macOS Settings → Keyboard → Dictation, and make sure the video's spoken language matches your device language settings. If results are still poor, try importing a separate subtitle file instead.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>The app crashed / I found a bug. What do I do?</h3>
+    <p>
+      Please email us (address below) with: (1) your device model and OS version, (2) what you were doing when it happened, (3) if possible, steps to reproduce. Screenshots or screen recordings are very helpful.
     </p>
   </div>
 
